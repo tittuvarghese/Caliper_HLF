@@ -1,0 +1,1904 @@
+2019.11.03-13:04:35.586[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:04:37.162[32m info [39m [caliper] [caliper-flow] 	####### Caliper Test #######
+2019.11.03-13:04:37.167[90m debug[39m [caliper] [testObserver.js] 	Creating test observer of type local
+2019.11.03-13:04:37.170[32m info [39m [caliper] [local-observer] 	Observer interval set to 1 seconds
+2019.11.03-13:04:37.173[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peercouchdb/docker-compose.yaml up -d;sleep 3s
+2019.11.03-13:04:42.077[32m info [39m [caliper] [adapters/fabric] 	Fabric SDK version: 1.4.4; TLS: none
+2019.11.03-13:04:42.533[31m error[39m [caliper] [caliper-flow] 	Error: Error: Couldn't enroll Org1's registrar or set it as user context: Calling enrollment endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:7054]
+    at Fabric._setUserContextByEnrollment (/usr/local/lib/node_modules/@hyperledger/caliper-cli/node_modules/@hyperledger/caliper-fabric/lib/fabric.js:1688:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2019.11.03-13:04:43.536[32m info [39m [caliper] [local-observer] 	[undefined Round undefined Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:04:43.537[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peercouchdb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-*
+2019.11.03-13:05:31.877[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:05:33.685[32m info [39m [caliper] [caliper-flow] 	####### Caliper Test #######
+2019.11.03-13:05:33.690[90m debug[39m [caliper] [testObserver.js] 	Creating test observer of type local
+2019.11.03-13:05:33.692[32m info [39m [caliper] [local-observer] 	Observer interval set to 1 seconds
+2019.11.03-13:05:33.694[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peercouchdb/docker-compose.yaml up -d;sleep 3s
+2019.11.03-13:05:42.405[32m info [39m [caliper] [adapters/fabric] 	Fabric SDK version: 1.4.4; TLS: none
+2019.11.03-13:05:43.180[32m info [39m [caliper] [adapters/fabric] 	Org1's registrar enrolled successfully
+2019.11.03-13:05:43.481[32m info [39m [caliper] [adapters/fabric] 	Org2's registrar enrolled successfully
+2019.11.03-13:05:43.503[32m info [39m [caliper] [adapters/fabric] 	Org1's admin's materials are successfully loaded
+2019.11.03-13:05:43.514[32m info [39m [caliper] [adapters/fabric] 	Org2's admin's materials are successfully loaded
+2019.11.03-13:05:43.524[32m info [39m [caliper] [adapters/fabric] 	client0.org1.example.com's materials are successfully loaded
+2019.11.03-13:05:43.532[32m info [39m [caliper] [adapters/fabric] 	client0.org2.example.com's materials are successfully loaded
+2019.11.03-13:05:43.533[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' definiton being generated from description
+2019.11.03-13:05:43.640[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' successfully created
+2019.11.03-13:05:43.640[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:05:48.922[32m info [39m [caliper] [adapters/fabric] 	Org1's peers successfully joined mychannel: peer0.org1.example.com
+2019.11.03-13:05:49.990[32m info [39m [caliper] [adapters/fabric] 	Org2's peers successfully joined mychannel: peer0.org2.example.com
+2019.11.03-13:05:49.991[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:05:54.999[32m info [39m [caliper] [adapters/fabric] 	Installing chaincodes for mychannel...
+2019.11.03-13:05:55.521[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:05:55.659[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:05:55.793[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:05:55.826[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:05:55.827[32m info [39m [caliper] [adapters/fabric] 	Instantiating marbles@v0 in mychannel. This might take some time...
+2019.11.03-13:09:33.095[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:09:34.746[32m info [39m [caliper] [caliper-flow] 	####### Caliper Test #######
+2019.11.03-13:09:34.749[90m debug[39m [caliper] [testObserver.js] 	Creating test observer of type local
+2019.11.03-13:09:34.751[32m info [39m [caliper] [local-observer] 	Observer interval set to 1 seconds
+2019.11.03-13:09:34.753[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml up -d;sleep 3s
+2019.11.03-13:09:39.010[32m info [39m [caliper] [adapters/fabric] 	Fabric SDK version: 1.4.4; TLS: none
+2019.11.03-13:09:39.300[33m warn [39m [caliper] [adapters/fabric] 	Org1's registrar's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.311[33m warn [39m [caliper] [adapters/fabric] 	Org2's registrar's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.324[33m warn [39m [caliper] [adapters/fabric] 	Org1's admin's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.329[33m warn [39m [caliper] [adapters/fabric] 	Org2's admin's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.339[33m warn [39m [caliper] [adapters/fabric] 	client0.org1.example.com's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.345[33m warn [39m [caliper] [adapters/fabric] 	client0.org2.example.com's materials found locally in file system key-value stores. Make sure it is the right one!
+2019.11.03-13:09:39.346[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' definiton being retrieved from file
+2019.11.03-13:09:42.403[31m error[39m [caliper] [caliper-flow] 	Error: Error: Couldn't create Channel 'mychannel': Failed to connect before the deadline URL:grpc://localhost:7050
+    at Fabric._createChannels (/usr/local/lib/node_modules/@hyperledger/caliper-cli/node_modules/@hyperledger/caliper-fabric/lib/fabric.js:352:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2019.11.03-13:09:43.409[32m info [39m [caliper] [local-observer] 	[undefined Round undefined Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:09:43.409[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-*
+2019.11.03-13:10:10.038[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:10:11.250[32m info [39m [caliper] [caliper-flow] 	####### Caliper Test #######
+2019.11.03-13:10:11.253[90m debug[39m [caliper] [testObserver.js] 	Creating test observer of type local
+2019.11.03-13:10:11.255[32m info [39m [caliper] [local-observer] 	Observer interval set to 1 seconds
+2019.11.03-13:10:11.257[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml up -d;sleep 3s
+2019.11.03-13:10:18.185[32m info [39m [caliper] [adapters/fabric] 	Fabric SDK version: 1.4.4; TLS: none
+2019.11.03-13:10:18.691[32m info [39m [caliper] [adapters/fabric] 	Org1's registrar enrolled successfully
+2019.11.03-13:10:18.877[32m info [39m [caliper] [adapters/fabric] 	Org2's registrar enrolled successfully
+2019.11.03-13:10:18.894[32m info [39m [caliper] [adapters/fabric] 	Org1's admin's materials are successfully loaded
+2019.11.03-13:10:18.902[32m info [39m [caliper] [adapters/fabric] 	Org2's admin's materials are successfully loaded
+2019.11.03-13:10:18.911[32m info [39m [caliper] [adapters/fabric] 	client0.org1.example.com's materials are successfully loaded
+2019.11.03-13:10:18.919[32m info [39m [caliper] [adapters/fabric] 	client0.org2.example.com's materials are successfully loaded
+2019.11.03-13:10:18.920[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' definiton being retrieved from file
+2019.11.03-13:10:18.991[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' successfully created
+2019.11.03-13:10:18.992[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:10:24.075[32m info [39m [caliper] [adapters/fabric] 	Org1's peers successfully joined mychannel: peer0.org1.example.com
+2019.11.03-13:10:24.131[32m info [39m [caliper] [adapters/fabric] 	Org2's peers successfully joined mychannel: peer0.org2.example.com
+2019.11.03-13:10:24.131[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:10:29.137[32m info [39m [caliper] [adapters/fabric] 	Installing chaincodes for mychannel...
+2019.11.03-13:10:29.201[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:10:29.217[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:10:29.246[32m info [39m [caliper] [adapters/fabric] 	drm@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:10:29.259[32m info [39m [caliper] [adapters/fabric] 	drm@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:10:29.294[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:10:29.305[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:10:29.333[32m info [39m [caliper] [adapters/fabric] 	smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:10:29.345[32m info [39m [caliper] [adapters/fabric] 	smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:10:29.346[32m info [39m [caliper] [adapters/fabric] 	Instantiating marbles@v0 in mychannel. This might take some time...
+2019.11.03-13:11:03.845[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated marbles@v0 in mychannel
+2019.11.03-13:11:03.847[32m info [39m [caliper] [adapters/fabric] 	Instantiating drm@v0 in mychannel. This might take some time...
+2019.11.03-13:11:33.199[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated drm@v0 in mychannel
+2019.11.03-13:11:33.199[32m info [39m [caliper] [adapters/fabric] 	Instantiating simple@v0 in mychannel. This might take some time...
+2019.11.03-13:12:05.792[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated simple@v0 in mychannel
+2019.11.03-13:12:05.793[32m info [39m [caliper] [adapters/fabric] 	Instantiating smallbank@v0 in mychannel. This might take some time...
+2019.11.03-13:12:33.654[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated smallbank@v0 in mychannel
+2019.11.03-13:12:33.655[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:12:40.761[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:41.088[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:41.088[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:12:41.088[32m info [39m [caliper] [caliper-flow] 	Started monitors successfully
+2019.11.03-13:12:41.089[32m info [39m [caliper] [defaultTest] 	####### Testing 'open' #######
+2019.11.03-13:12:41.090[32m info [39m [caliper] [defaultTest] 	------ Test round 1 ------
+2019.11.03-13:12:41.095[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:12:41.096[32m info [39m [caliper] [client.js] 	Waiting for 1 clients to be ready... 
+2019.11.03-13:12:42.090[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:42.095[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:12:42.370[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:43.089[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:43.100[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:12:43.402[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:41.490[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:12:43.711[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:12:43.716[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:12:43.717[32m info [39m [caliper] [client.js] 	1 clients ready, starting test phase
+2019.11.03-13:12:43.718[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:12:43.719[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:12:43.864[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:12:43.867[32m info [39m [caliper] [local-client.js] 	Info: client 2862 init test :opening accounts
+2019.11.03-13:12:44.090[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:44.101[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:12:44.102[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:12:44.366[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:44.872[32m info [39m [caliper] [local-client.js] 	Info: client 2862 start test runFixedNumber():opening accounts
+2019.11.03-13:12:45.094[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:45.102[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:12:45.480[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:46.097[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:46.104[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 42 Succ: 17 Fail:0 Unfinished:25
+2019.11.03-13:12:46.430[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:47.097[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:47.105[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 94 Succ: 67 Fail:0 Unfinished:27
+2019.11.03-13:12:47.339[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:48.099[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:48.339[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:48.454[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 100 Succ: 100 Fail:0 Unfinished:0
+2019.11.03-13:12:48.456[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:12:48.457[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:12:48.467[32m info [39m [caliper] [report-builder] 	
++------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| open | 100  | 0    | 50.5            | 0.57            | 0.19            | 0.40            | 42.3             |
++------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:12:48.469[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:12:48.473[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.7MB       | 6.6MB       | 0.00       | 0.00       | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 6.6MB       | 6.5MB       | 8.87       | 2.96       | 172.5KB    | 70.4KB      | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 7.0MB       | 6.9MB       | 7.90       | 2.63       | 157.2KB    | 60.9KB      | 24.0KB    | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.5MB       | 7.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 135.0MB     | 132.6MB     | 38.00      | 15.02      | 493.5KB    | 407.3KB     | 48.0KB    | 512.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 121.4MB     | 120.6MB     | 39.37      | 15.16      | 538.0KB    | 289.4KB     | 24.0KB    | 512.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 7.2MB       | 7.2MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 16.9MB      | 15.3MB      | 12.99      | 4.35       | 408.7KB    | 789.0KB     | 84.0KB    | 460.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 7.5MB       | 7.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:12:48.474[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:12:48.474[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:12:48.476[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:12:48.476[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:12:48.476[32m info [39m [caliper] [defaultTest] 	------ Passed 'open' testing ------
+2019.11.03-13:12:48.476[32m info [39m [caliper] [defaultTest] 	Waiting 5 seconds for the next round...
+2019.11.03-13:12:49.101[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:49.285[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:50.101[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:50.322[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:51.101[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:51.282[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:52.102[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:52.277[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:53.102[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:53.324[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:53.479[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:53.659[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:53.659[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:12:53.659[32m info [39m [caliper] [defaultTest] 	####### Testing 'query' #######
+2019.11.03-13:12:53.660[32m info [39m [caliper] [defaultTest] 	------ Test round 2 ------
+2019.11.03-13:12:53.660[32m info [39m [caliper] [client.js] 	Existing 1 clients will be reused in next test round... 
+2019.11.03-13:12:53.660[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:12:53.662[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:12:53.697[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:12:53.697[32m info [39m [caliper] [local-client.js] 	Info: client 2862 init test :querying accounts
+2019.11.03-13:12:54.659[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:54.665[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:12:54.666[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:12:54.702[32m info [39m [caliper] [local-client.js] 	Info: client 2862 start test runFixedNumber():querying accounts
+2019.11.03-13:12:54.982[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:55.658[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:55.672[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 97 Succ: 94 Fail:0 Unfinished:3
+2019.11.03-13:12:55.931[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:56.659[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:56.892[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:56.932[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 100 Succ: 100 Fail:0 Unfinished:0
+2019.11.03-13:12:56.933[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:12:56.933[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:12:56.935[32m info [39m [caliper] [report-builder] 	
++-------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name  | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| query | 100  | 0    | 101.1           | 0.06            | 0.01            | 0.03            | 97.8             |
++-------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:12:56.936[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:12:56.942[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.5MB       | 6.5MB       | 0.02       | 0.02       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.6MB       | 6.6MB       | 0.05       | 0.05       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 6.6MB       | 6.6MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 7.0MB       | 7.0MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.5MB       | 7.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 135.1MB     | 135.1MB     | 3.11       | 3.11       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 121.4MB     | 121.4MB     | 2.26       | 2.26       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 7.2MB       | 7.2MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 16.9MB      | 16.9MB      | 0.04       | 0.04       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 7.5MB       | 7.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:12:56.943[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:12:56.943[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:12:56.944[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:12:56.944[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:12:56.945[32m info [39m [caliper] [defaultTest] 	------ Passed 'query' testing ------
+2019.11.03-13:12:56.945[32m info [39m [caliper] [defaultTest] 	Waiting 5 seconds for the next round...
+2019.11.03-13:12:57.664[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:57.847[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:58.665[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:58.882[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:12:59.664[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:12:59.851[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:00.668[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:00.846[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:01.668[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:01.941[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:02.673[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:02.858[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:03.677[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:03.878[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:04.273[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:04.486[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:04.486[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:13:04.487[32m info [39m [caliper] [defaultTest] 	####### Testing 'transfer' #######
+2019.11.03-13:13:04.487[32m info [39m [caliper] [defaultTest] 	------ Test round 3 ------
+2019.11.03-13:13:04.487[32m info [39m [caliper] [client.js] 	Existing 1 clients will be reused in next test round... 
+2019.11.03-13:13:04.487[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:13:04.489[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:13:04.527[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:13:04.527[32m info [39m [caliper] [local-client.js] 	Info: client 2862 init test :transfering money
+2019.11.03-13:13:05.489[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:05.494[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:13:05.495[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:13:05.529[32m info [39m [caliper] [local-client.js] 	Info: client 2862 start test runFixedNumber():transfering money
+2019.11.03-13:13:05.852[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:05.952[31m error[39m [caliper] [adapters/fabric] 	Transaction[1f76ef01e9] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:13:05.956[31m error[39m [caliper] [adapters/fabric] 	Transaction[abe4e5b368] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:13:06.182[31m error[39m [caliper] [adapters/fabric] 	Transaction[c415ee574d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.182[31m error[39m [caliper] [adapters/fabric] 	Transaction[3c261af3fd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.182[31m error[39m [caliper] [adapters/fabric] 	Transaction[6a3fb111f9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.183[31m error[39m [caliper] [adapters/fabric] 	Transaction[58574e7f8d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.183[31m error[39m [caliper] [adapters/fabric] 	Transaction[c1b356c19c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.322[31m error[39m [caliper] [adapters/fabric] 	Transaction[96d462e014] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.490[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:06.497[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 49 Succ: 24 Fail:8 Unfinished:17
+2019.11.03-13:13:06.788[31m error[39m [caliper] [adapters/fabric] 	Transaction[cea28d9d35] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.789[31m error[39m [caliper] [adapters/fabric] 	Transaction[98188f21d4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.855[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:06.902[31m error[39m [caliper] [adapters/fabric] 	Transaction[20c0ae603e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.902[31m error[39m [caliper] [adapters/fabric] 	Transaction[ad2b0fcc2c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:06.902[31m error[39m [caliper] [adapters/fabric] 	Transaction[74959a1950] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.083[31m error[39m [caliper] [adapters/fabric] 	Transaction[9da5467e4c] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:13:07.090[31m error[39m [caliper] [adapters/fabric] 	Transaction[9c971e1e0a] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:13:07.140[31m error[39m [caliper] [adapters/fabric] 	Transaction[d9e79cd798] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.141[31m error[39m [caliper] [adapters/fabric] 	Transaction[75667fd30b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.141[31m error[39m [caliper] [adapters/fabric] 	Transaction[1bc58b7945] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.254[31m error[39m [caliper] [adapters/fabric] 	Transaction[1ad4e47f01] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.254[31m error[39m [caliper] [adapters/fabric] 	Transaction[c748e035a3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.255[31m error[39m [caliper] [adapters/fabric] 	Transaction[cfcff0f135] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.255[31m error[39m [caliper] [adapters/fabric] 	Transaction[5d61f8f8b0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.255[31m error[39m [caliper] [adapters/fabric] 	Transaction[8e09f299c1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.256[31m error[39m [caliper] [adapters/fabric] 	Transaction[dce70076f6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.272[31m error[39m [caliper] [adapters/fabric] 	Transaction[d761d80e67] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:13:07.457[31m error[39m [caliper] [adapters/fabric] 	Transaction[edad61143d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.457[31m error[39m [caliper] [adapters/fabric] 	Transaction[53fadcb355] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.495[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:07.515[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 99 Succ: 57 Fail:27 Unfinished:15
+2019.11.03-13:13:07.617[31m error[39m [caliper] [adapters/fabric] 	Transaction[627b04145e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.617[31m error[39m [caliper] [adapters/fabric] 	Transaction[4b235a2ef6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.797[31m error[39m [caliper] [adapters/fabric] 	Transaction[40ecd74e69] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.798[31m error[39m [caliper] [adapters/fabric] 	Transaction[9e891b1a60] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:13:07.846[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:08.499[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:13:08.691[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:13:09.007[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 100 Succ: 69 Fail:31 Unfinished:0
+2019.11.03-13:13:09.007[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:13:09.008[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:13:09.009[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 69   | 31   | 50.5            | 0.60            | 0.17            | 0.39            | 30.4             |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:13:09.010[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:13:09.013[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.6MB       | 6.6MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 6.6MB       | 6.6MB       | 8.09       | 4.04       | 201.2KB    | 100.4KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 7.1MB       | 7.0MB       | 8.96       | 4.48       | 205.9KB    | 104.2KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.5MB       | 7.5MB       | 0.33       | 0.16       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.6MB       | 6.6MB       | 0.31       | 0.15       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 136.0MB     | 135.6MB     | 34.51      | 18.90      | 630.5KB    | 472.9KB     | 4.0KB     | 648.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 126.7MB     | 124.1MB     | 36.85      | 20.09      | 617.6KB    | 338.8KB     | 0B        | 648.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 7.2MB       | 7.2MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 17.3MB      | 17.1MB      | 14.27      | 7.15       | 409.0KB    | 793.5KB     | 0B        | 452.0KB    |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 7.5MB       | 7.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:13:09.014[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:13:09.014[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:13:09.014[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:13:09.014[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:13:09.015[32m info [39m [caliper] [defaultTest] 	------ Passed 'transfer' testing ------
+2019.11.03-13:13:09.015[32m info [39m [caliper] [caliper-flow] 	---------- Finished Test ----------
+
+2019.11.03-13:13:09.015[32m info [39m [caliper] [report-builder] 	### All test results ###
+2019.11.03-13:13:09.016[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| open     | 100  | 0    | 50.5            | 0.57            | 0.19            | 0.40            | 42.3             |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| query    | 100  | 0    | 101.1           | 0.06            | 0.01            | 0.03            | 97.8             |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 69   | 31   | 50.5            | 0.60            | 0.17            | 0.39            | 30.4             |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:13:09.228[32m info [39m [caliper] [caliper-flow] 	Generated report with path /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples/report.html
+2019.11.03-13:13:09.229[32m info [39m [caliper] [caliper-flow] 	
+
+#######################################
+# Test summary: 3 succeeded, 0 failed #
+#######################################
+
+2019.11.03-13:13:09.248[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:13:10.229[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 100 Succ: 69 Fail:31 Unfinished:0
+2019.11.03-13:13:10.230[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-*
+2019.11.03-13:19:44.902[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:19:46.889[32m info [39m [caliper] [caliper-flow] 	####### Caliper Test #######
+2019.11.03-13:19:46.891[90m debug[39m [caliper] [testObserver.js] 	Creating test observer of type local
+2019.11.03-13:19:46.894[32m info [39m [caliper] [local-observer] 	Observer interval set to 1 seconds
+2019.11.03-13:19:46.896[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml up -d;sleep 3s
+2019.11.03-13:19:54.218[32m info [39m [caliper] [adapters/fabric] 	Fabric SDK version: 1.4.4; TLS: none
+2019.11.03-13:19:54.738[32m info [39m [caliper] [adapters/fabric] 	Org1's registrar enrolled successfully
+2019.11.03-13:19:54.894[32m info [39m [caliper] [adapters/fabric] 	Org2's registrar enrolled successfully
+2019.11.03-13:19:54.909[32m info [39m [caliper] [adapters/fabric] 	Org1's admin's materials are successfully loaded
+2019.11.03-13:19:54.916[32m info [39m [caliper] [adapters/fabric] 	Org2's admin's materials are successfully loaded
+2019.11.03-13:19:54.924[32m info [39m [caliper] [adapters/fabric] 	client0.org1.example.com's materials are successfully loaded
+2019.11.03-13:19:54.933[32m info [39m [caliper] [adapters/fabric] 	client0.org2.example.com's materials are successfully loaded
+2019.11.03-13:19:54.934[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' definiton being retrieved from file
+2019.11.03-13:19:55.012[32m info [39m [caliper] [adapters/fabric] 	Channel 'mychannel' successfully created
+2019.11.03-13:19:55.013[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:20:00.112[32m info [39m [caliper] [adapters/fabric] 	Org1's peers successfully joined mychannel: peer0.org1.example.com
+2019.11.03-13:20:00.170[32m info [39m [caliper] [adapters/fabric] 	Org2's peers successfully joined mychannel: peer0.org2.example.com
+2019.11.03-13:20:00.171[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:20:05.177[32m info [39m [caliper] [adapters/fabric] 	Installing chaincodes for mychannel...
+2019.11.03-13:20:05.237[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:20:05.253[32m info [39m [caliper] [adapters/fabric] 	marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:20:05.282[32m info [39m [caliper] [adapters/fabric] 	drm@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:20:05.295[32m info [39m [caliper] [adapters/fabric] 	drm@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:20:05.324[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:20:05.336[32m info [39m [caliper] [adapters/fabric] 	simple@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:20:05.365[32m info [39m [caliper] [adapters/fabric] 	smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com
+2019.11.03-13:20:05.375[32m info [39m [caliper] [adapters/fabric] 	smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com
+2019.11.03-13:20:05.375[32m info [39m [caliper] [adapters/fabric] 	Instantiating marbles@v0 in mychannel. This might take some time...
+2019.11.03-13:20:39.336[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated marbles@v0 in mychannel
+2019.11.03-13:20:39.337[32m info [39m [caliper] [adapters/fabric] 	Instantiating drm@v0 in mychannel. This might take some time...
+2019.11.03-13:21:12.168[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated drm@v0 in mychannel
+2019.11.03-13:21:12.169[32m info [39m [caliper] [adapters/fabric] 	Instantiating simple@v0 in mychannel. This might take some time...
+2019.11.03-13:21:44.157[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated simple@v0 in mychannel
+2019.11.03-13:21:44.158[32m info [39m [caliper] [adapters/fabric] 	Instantiating smallbank@v0 in mychannel. This might take some time...
+2019.11.03-13:22:14.822[32m info [39m [caliper] [adapters/fabric] 	Successfully instantiated smallbank@v0 in mychannel
+2019.11.03-13:22:14.823[32m info [39m [caliper] [adapters/fabric] 	Sleeping 5s...
+2019.11.03-13:22:21.523[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:21.959[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:21.959[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:22:21.959[32m info [39m [caliper] [caliper-flow] 	Started monitors successfully
+2019.11.03-13:22:21.960[32m info [39m [caliper] [defaultTest] 	####### Testing 'open' #######
+2019.11.03-13:22:21.960[32m info [39m [caliper] [defaultTest] 	------ Test round 1 ------
+2019.11.03-13:22:21.966[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:22:21.969[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:22:21.976[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:22:21.986[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:22:22.123[32m info [39m [caliper] [client.js] 	Launching client with PID 
+2019.11.03-13:22:22.139[32m info [39m [caliper] [client.js] 	Waiting for 5 clients to be ready... 
+2019.11.03-13:22:22.961[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:22.978[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:23.960[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:23.961[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:24.000[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:24.871[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:24.984[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:25.007[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:26.249[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:26.250[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:26.262[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:27.075[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:27.252[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:27.295[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:28.580[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:28.581[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:28.600[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:22.652[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:22:22.652[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:22:22.642[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:22:28.892[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:22:28.907[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:22:28.927[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:22:22.693[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:22:22.825[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2019.11.03-13:22:29.046[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:22:29.052[32m info [39m [caliper] [fabric/fabricClientWorker] 	Client ready
+2019.11.03-13:22:29.129[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:29.130[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:22:29.131[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:22:29.131[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:22:29.132[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:22:29.132[32m info [39m [caliper] [client.js] 	Client ready message received
+2019.11.03-13:22:29.132[32m info [39m [caliper] [client.js] 	5 clients ready, starting test phase
+2019.11.03-13:22:29.134[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:29.134[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:29.135[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:29.136[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:29.138[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:29.137[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:29.135[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:29.145[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:29.137[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:29.192[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:29.431[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#1 for round#0
+2019.11.03-13:22:29.435[32m info [39m [caliper] [local-client.js] 	Info: client 3206 init test :opening accounts
+2019.11.03-13:22:29.459[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:22:29.460[32m info [39m [caliper] [local-client.js] 	Info: client 3205 init test :opening accounts
+2019.11.03-13:22:29.548[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#2 for round#0
+2019.11.03-13:22:29.551[32m info [39m [caliper] [local-client.js] 	Info: client 3207 init test :opening accounts
+2019.11.03-13:22:29.581[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:29.600[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:29.601[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:29.608[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:29.608[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:29.638[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#4 for round#0
+2019.11.03-13:22:29.641[32m info [39m [caliper] [local-client.js] 	Info: client 3209 init test :opening accounts
+2019.11.03-13:22:29.667[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#3 for round#0
+2019.11.03-13:22:29.669[32m info [39m [caliper] [local-client.js] 	Info: client 3208 init test :opening accounts
+2019.11.03-13:22:30.004[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:30.437[32m info [39m [caliper] [local-client.js] 	Info: client 3206 start test runFixedNumber():opening accounts
+2019.11.03-13:22:30.466[32m info [39m [caliper] [local-client.js] 	Info: client 3205 start test runFixedNumber():opening accounts
+2019.11.03-13:22:30.554[32m info [39m [caliper] [local-client.js] 	Info: client 3207 start test runFixedNumber():opening accounts
+2019.11.03-13:22:30.581[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:30.601[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:30.601[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:30.602[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:30.646[32m info [39m [caliper] [local-client.js] 	Info: client 3209 start test runFixedNumber():opening accounts
+2019.11.03-13:22:30.671[32m info [39m [caliper] [local-client.js] 	Info: client 3208 start test runFixedNumber():opening accounts
+2019.11.03-13:22:31.514[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:31.584[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:31.603[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 102 Succ: 0 Fail:0 Unfinished:102
+2019.11.03-13:22:32.580[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:32.584[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:32.606[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 319 Succ: 0 Fail:0 Unfinished:319
+2019.11.03-13:22:33.295[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:33.584[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:33.609[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 0 Fail:0 Unfinished:500
+2019.11.03-13:22:34.219[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:34.585[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:34.612[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 1 Fail:0 Unfinished:499
+2019.11.03-13:22:35.578[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:35.611[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:35.639[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 1 Fail:0 Unfinished:499
+2019.11.03-13:22:36.562[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:36.611[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:36.634[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 35 Fail:0 Unfinished:465
+2019.11.03-13:22:37.179[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:37.612[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:37.634[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 129 Fail:0 Unfinished:371
+2019.11.03-13:22:38.102[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:38.612[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:38.635[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0
+2019.11.03-13:22:38.874[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:39.613[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:39.915[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:39.916[32m info [39m [caliper] [local-observer] 	[open Round 0 Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0
+2019.11.03-13:22:39.917[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:22:39.917[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:22:39.925[32m info [39m [caliper] [report-builder] 	
++------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| open | 500  | 0    | 184.6           | 7.58            | 3.37            | 5.79            | 61.2             |
++------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:22:39.927[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:22:39.930[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.7MB       | 6.7MB       | 0.00       | 0.00       | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.6MB       | 6.5MB       | 0.00       | 0.00       | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 8.2MB       | 6.8MB       | 4.30       | 0.86       | 684.0KB    | 175.5KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 10.1MB      | 7.9MB       | 7.15       | 1.43       | 682.4KB    | 166.9KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.6MB       | 7.6MB       | 0.00       | 0.00       | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 97.6MB      | 94.9MB      | 60.93      | 22.43      | 2.7MB      | 1.3MB       | 0B        | 1.6MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 131.6MB     | 127.8MB     | 50.53      | 22.11      | 2.8MB      | 2.0MB       | 4.0KB     | 1.8MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 8.1MB       | 8.1MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 25.9MB      | 16.8MB      | 45.36      | 12.76      | 2.0MB      | 3.9MB       | 172.0KB   | 2.3MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 8.9MB       | 8.9MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:22:39.931[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:22:39.931[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:22:39.932[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:22:39.932[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:22:39.932[32m info [39m [caliper] [defaultTest] 	------ Passed 'open' testing ------
+2019.11.03-13:22:39.932[32m info [39m [caliper] [defaultTest] 	Waiting 5 seconds for the next round...
+2019.11.03-13:22:40.614[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:40.872[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:41.615[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:41.912[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:42.616[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:42.871[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:43.616[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:43.979[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:44.619[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:44.884[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:44.934[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:45.209[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:45.210[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:22:45.210[32m info [39m [caliper] [defaultTest] 	####### Testing 'query' #######
+2019.11.03-13:22:45.210[32m info [39m [caliper] [defaultTest] 	------ Test round 2 ------
+2019.11.03-13:22:45.211[32m info [39m [caliper] [client.js] 	Existing 5 clients will be reused in next test round... 
+2019.11.03-13:22:45.211[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:45.211[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:45.211[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:45.216[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:45.217[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:45.212[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:45.212[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:45.213[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:45.217[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:45.218[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:45.362[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#3 for round#0
+2019.11.03-13:22:45.363[32m info [39m [caliper] [local-client.js] 	Info: client 3208 init test :querying accounts
+2019.11.03-13:22:45.366[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#1 for round#0
+2019.11.03-13:22:45.366[32m info [39m [caliper] [local-client.js] 	Info: client 3206 init test :querying accounts
+2019.11.03-13:22:45.395[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:22:45.403[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#4 for round#0
+2019.11.03-13:22:45.403[32m info [39m [caliper] [local-client.js] 	Info: client 3209 init test :querying accounts
+2019.11.03-13:22:45.395[32m info [39m [caliper] [local-client.js] 	Info: client 3205 init test :querying accounts
+2019.11.03-13:22:45.430[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#2 for round#0
+2019.11.03-13:22:45.431[32m info [39m [caliper] [local-client.js] 	Info: client 3207 init test :querying accounts
+2019.11.03-13:22:46.210[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:46.217[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:46.217[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:46.217[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:46.218[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:46.218[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:46.218[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:46.370[32m info [39m [caliper] [local-client.js] 	Info: client 3208 start test runFixedNumber():querying accounts
+2019.11.03-13:22:46.370[32m info [39m [caliper] [local-client.js] 	Info: client 3206 start test runFixedNumber():querying accounts
+2019.11.03-13:22:46.399[32m info [39m [caliper] [local-client.js] 	Info: client 3205 start test runFixedNumber():querying accounts
+2019.11.03-13:22:46.410[32m info [39m [caliper] [local-client.js] 	Info: client 3209 start test runFixedNumber():querying accounts
+2019.11.03-13:22:46.445[32m info [39m [caliper] [local-client.js] 	Info: client 3207 start test runFixedNumber():querying accounts
+2019.11.03-13:22:46.756[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:47.212[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:47.219[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 132 Succ: 84 Fail:0 Unfinished:48
+2019.11.03-13:22:47.715[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:48.215[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:48.231[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 365 Succ: 224 Fail:0 Unfinished:141
+2019.11.03-13:22:48.882[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:49.216[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:49.232[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0
+2019.11.03-13:22:49.544[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:50.222[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:50.535[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:50.546[32m info [39m [caliper] [local-observer] 	[query Round 0 Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0
+2019.11.03-13:22:50.547[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:22:50.547[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:22:50.549[32m info [39m [caliper] [report-builder] 	
++-------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name  | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| query | 500  | 0    | 196.1           | 1.35            | 0.02            | 0.61            | 180.1            |
++-------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:22:50.550[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:22:50.562[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.7MB       | 6.7MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 8.2MB       | 8.2MB       | 5.18       | 2.59       | 639.4KB    | 130.0KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 10.1MB      | 10.1MB      | 6.24       | 3.12       | 645.0KB    | 139.5KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.6MB       | 7.6MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 99.0MB      | 98.9MB      | 50.98      | 27.89      | 801.5KB    | 1.2MB       | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 132.9MB     | 132.8MB     | 49.54      | 30.12      | 780.1KB    | 1.2MB       | 16.0KB    | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 8.1MB       | 8.1MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 26.0MB      | 26.0MB      | 0.05       | 0.03       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 8.9MB       | 8.9MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:22:50.563[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:22:50.563[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:22:50.564[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:22:50.564[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:22:50.564[32m info [39m [caliper] [defaultTest] 	------ Passed 'query' testing ------
+2019.11.03-13:22:50.564[32m info [39m [caliper] [defaultTest] 	Waiting 5 seconds for the next round...
+2019.11.03-13:22:51.223[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:51.465[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:52.225[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:52.504[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:53.226[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:53.469[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:54.225[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:54.507[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:55.227[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:55.552[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:55.565[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:55.806[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:55.807[32m info [39m [caliper] [monitor-process] 	Starting process monitor with update interval 1000 ms
+2019.11.03-13:22:55.807[32m info [39m [caliper] [defaultTest] 	####### Testing 'transfer' #######
+2019.11.03-13:22:55.807[32m info [39m [caliper] [defaultTest] 	------ Test round 3 ------
+2019.11.03-13:22:55.807[32m info [39m [caliper] [client.js] 	Existing 5 clients will be reused in next test round... 
+2019.11.03-13:22:55.808[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:55.808[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:55.808[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:55.808[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:55.809[90m debug[39m [caliper] [local-client.js] 	doTest() with:
+2019.11.03-13:22:55.810[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:55.813[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:55.810[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:55.818[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:55.819[32m info [39m [caliper] [local-client.js] 	txUpdateTime: 1000
+2019.11.03-13:22:55.940[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#2 for round#0
+2019.11.03-13:22:55.947[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#1 for round#0
+2019.11.03-13:22:55.957[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#3 for round#0
+2019.11.03-13:22:55.958[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#4 for round#0
+2019.11.03-13:22:55.962[90m debug[39m [caliper] [rateControl.js] 	Creating rate controller for client#0 for round#0
+2019.11.03-13:22:55.963[32m info [39m [caliper] [local-client.js] 	Info: client 3205 init test :transfering money
+2019.11.03-13:22:55.941[32m info [39m [caliper] [local-client.js] 	Info: client 3207 init test :transfering money
+2019.11.03-13:22:55.958[32m info [39m [caliper] [local-client.js] 	Info: client 3208 init test :transfering money
+2019.11.03-13:22:55.958[32m info [39m [caliper] [local-client.js] 	Info: client 3209 init test :transfering money
+2019.11.03-13:22:55.948[32m info [39m [caliper] [local-client.js] 	Info: client 3206 init test :transfering money
+2019.11.03-13:22:56.807[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:56.813[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:56.813[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:56.814[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:56.814[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:56.814[32m info [39m [caliper] [local-observer] 	Resetting txCount indicator count
+2019.11.03-13:22:56.814[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0
+2019.11.03-13:22:56.946[32m info [39m [caliper] [local-client.js] 	Info: client 3207 start test runFixedNumber():transfering money
+2019.11.03-13:22:56.964[32m info [39m [caliper] [local-client.js] 	Info: client 3205 start test runFixedNumber():transfering money
+2019.11.03-13:22:56.972[32m info [39m [caliper] [local-client.js] 	Info: client 3208 start test runFixedNumber():transfering money
+2019.11.03-13:22:56.975[32m info [39m [caliper] [local-client.js] 	Info: client 3206 start test runFixedNumber():transfering money
+2019.11.03-13:22:56.978[32m info [39m [caliper] [local-client.js] 	Info: client 3209 start test runFixedNumber():transfering money
+2019.11.03-13:22:57.282[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:57.807[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:57.817[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 68 Succ: 0 Fail:0 Unfinished:68
+2019.11.03-13:22:58.332[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:58.811[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:58.833[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 371 Succ: 0 Fail:0 Unfinished:371
+2019.11.03-13:22:59.511[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:22:59.813[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:22:59.833[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 1 Fail:0 Unfinished:499
+2019.11.03-13:23:00.424[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:00.815[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:00.834[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 1 Fail:0 Unfinished:499
+2019.11.03-13:23:01.210[31m error[39m [caliper] [adapters/fabric] 	Transaction[21e5ecbb5e] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.213[31m error[39m [caliper] [adapters/fabric] 	Transaction[24f962fec2] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.278[31m error[39m [caliper] [adapters/fabric] 	Transaction[20c6f55471] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.331[31m error[39m [caliper] [adapters/fabric] 	Transaction[0e5efbeb96] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.437[31m error[39m [caliper] [adapters/fabric] 	Transaction[9c7aa4206e] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.452[31m error[39m [caliper] [adapters/fabric] 	Transaction[d1aa72eccc] life-cycle errors:
+	- Read/Write set mismatch between endorsements
+2019.11.03-13:23:01.784[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:01.815[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:01.839[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 21 Fail:6 Unfinished:473
+2019.11.03-13:23:01.987[31m error[39m [caliper] [adapters/fabric] 	Transaction[74c1339c73] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:01.988[31m error[39m [caliper] [adapters/fabric] 	Transaction[a4717b0004] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.128[31m error[39m [caliper] [adapters/fabric] 	Transaction[6e3c7cbc04] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.129[31m error[39m [caliper] [adapters/fabric] 	Transaction[ee558d6c52] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.301[31m error[39m [caliper] [adapters/fabric] 	Transaction[14f5adfc9d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.301[31m error[39m [caliper] [adapters/fabric] 	Transaction[b68764b93d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.434[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:02.491[31m error[39m [caliper] [adapters/fabric] 	Transaction[da700a5ccb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.492[31m error[39m [caliper] [adapters/fabric] 	Transaction[f712a35c97] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.550[31m error[39m [caliper] [adapters/fabric] 	Transaction[5217a154e7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.550[31m error[39m [caliper] [adapters/fabric] 	Transaction[7274c6883b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.553[31m error[39m [caliper] [adapters/fabric] 	Transaction[48bd92d440] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.554[31m error[39m [caliper] [adapters/fabric] 	Transaction[f9787a68b3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.557[31m error[39m [caliper] [adapters/fabric] 	Transaction[80a0ddec8f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.557[31m error[39m [caliper] [adapters/fabric] 	Transaction[8fb6e06650] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.659[31m error[39m [caliper] [adapters/fabric] 	Transaction[450d64198b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.660[31m error[39m [caliper] [adapters/fabric] 	Transaction[da21dbe1cb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.660[31m error[39m [caliper] [adapters/fabric] 	Transaction[6b3da3ebfe] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.661[31m error[39m [caliper] [adapters/fabric] 	Transaction[668da7043a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.662[31m error[39m [caliper] [adapters/fabric] 	Transaction[e174e1fd8f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.769[31m error[39m [caliper] [adapters/fabric] 	Transaction[68b01bddb5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.770[31m error[39m [caliper] [adapters/fabric] 	Transaction[beca154673] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.770[31m error[39m [caliper] [adapters/fabric] 	Transaction[5f961317e8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.781[31m error[39m [caliper] [adapters/fabric] 	Transaction[8fe68502b8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.815[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:02.840[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 65 Fail:29 Unfinished:406
+2019.11.03-13:23:02.850[31m error[39m [caliper] [adapters/fabric] 	Transaction[677990caf6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.850[31m error[39m [caliper] [adapters/fabric] 	Transaction[56bb2b2190] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.862[31m error[39m [caliper] [adapters/fabric] 	Transaction[8a623f4949] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.862[31m error[39m [caliper] [adapters/fabric] 	Transaction[e23edce0ba] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.862[31m error[39m [caliper] [adapters/fabric] 	Transaction[72766b2fa7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.945[31m error[39m [caliper] [adapters/fabric] 	Transaction[a91163e897] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.946[31m error[39m [caliper] [adapters/fabric] 	Transaction[4239ca72cd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.946[31m error[39m [caliper] [adapters/fabric] 	Transaction[8b0786aa34] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.949[31m error[39m [caliper] [adapters/fabric] 	Transaction[e2e5ede62e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.950[31m error[39m [caliper] [adapters/fabric] 	Transaction[cd5cc878fe] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:02.959[31m error[39m [caliper] [adapters/fabric] 	Transaction[25a3ac90c9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.133[31m error[39m [caliper] [adapters/fabric] 	Transaction[72b8daa355] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.133[31m error[39m [caliper] [adapters/fabric] 	Transaction[36554cacd6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.141[31m error[39m [caliper] [adapters/fabric] 	Transaction[aac8272d5a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.142[31m error[39m [caliper] [adapters/fabric] 	Transaction[78a383aec3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.156[31m error[39m [caliper] [adapters/fabric] 	Transaction[f82816c9b4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.183[31m error[39m [caliper] [adapters/fabric] 	Transaction[6dc4cd0b70] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.184[31m error[39m [caliper] [adapters/fabric] 	Transaction[65b4ade423] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.187[31m error[39m [caliper] [adapters/fabric] 	Transaction[0885640651] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.189[31m error[39m [caliper] [adapters/fabric] 	Transaction[98cdc845d3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.189[31m error[39m [caliper] [adapters/fabric] 	Transaction[af44ebebd6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.227[31m error[39m [caliper] [adapters/fabric] 	Transaction[a559c73fec] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.227[31m error[39m [caliper] [adapters/fabric] 	Transaction[a62d251660] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.273[31m error[39m [caliper] [adapters/fabric] 	Transaction[d264ae72af] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.278[31m error[39m [caliper] [adapters/fabric] 	Transaction[827d43f47f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.293[31m error[39m [caliper] [adapters/fabric] 	Transaction[2a3337ba27] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.318[31m error[39m [caliper] [adapters/fabric] 	Transaction[760d637b14] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.350[31m error[39m [caliper] [adapters/fabric] 	Transaction[cf5ee7d54d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.353[31m error[39m [caliper] [adapters/fabric] 	Transaction[7c65245211] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.361[31m error[39m [caliper] [adapters/fabric] 	Transaction[5c274882ca] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.361[31m error[39m [caliper] [adapters/fabric] 	Transaction[86e24d78f4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.361[31m error[39m [caliper] [adapters/fabric] 	Transaction[fa03ccc082] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[7e24d4063e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[3eb06208bb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[141b575a70] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[0d58bf01fe] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[925e5daf14] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.408[31m error[39m [caliper] [adapters/fabric] 	Transaction[1bb08a3b05] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.409[31m error[39m [caliper] [adapters/fabric] 	Transaction[99d7eee398] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.410[31m error[39m [caliper] [adapters/fabric] 	Transaction[04b76a3258] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.411[31m error[39m [caliper] [adapters/fabric] 	Transaction[e309080f7e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.413[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:03.460[31m error[39m [caliper] [adapters/fabric] 	Transaction[c52c7ed392] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.460[31m error[39m [caliper] [adapters/fabric] 	Transaction[621fc4e240] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.461[31m error[39m [caliper] [adapters/fabric] 	Transaction[1198ff1275] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.461[31m error[39m [caliper] [adapters/fabric] 	Transaction[459a2acf85] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.461[31m error[39m [caliper] [adapters/fabric] 	Transaction[6eeb422f0a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.461[31m error[39m [caliper] [adapters/fabric] 	Transaction[b857857c03] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.464[31m error[39m [caliper] [adapters/fabric] 	Transaction[da6b55371c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.464[31m error[39m [caliper] [adapters/fabric] 	Transaction[feeeeec135] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.505[31m error[39m [caliper] [adapters/fabric] 	Transaction[c7e73d233c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.509[31m error[39m [caliper] [adapters/fabric] 	Transaction[d9e4f578e3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.510[31m error[39m [caliper] [adapters/fabric] 	Transaction[7fdffb4ac2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.510[31m error[39m [caliper] [adapters/fabric] 	Transaction[80362c7959] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.527[31m error[39m [caliper] [adapters/fabric] 	Transaction[c6d101b1ee] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.527[31m error[39m [caliper] [adapters/fabric] 	Transaction[87ece105c7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.559[31m error[39m [caliper] [adapters/fabric] 	Transaction[6a02d38957] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.559[31m error[39m [caliper] [adapters/fabric] 	Transaction[902bccf50e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.560[31m error[39m [caliper] [adapters/fabric] 	Transaction[dd88560c57] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.560[31m error[39m [caliper] [adapters/fabric] 	Transaction[5375891e70] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.564[31m error[39m [caliper] [adapters/fabric] 	Transaction[aea80caf7c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.616[31m error[39m [caliper] [adapters/fabric] 	Transaction[0c79f4d018] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.617[31m error[39m [caliper] [adapters/fabric] 	Transaction[83545cf20a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.618[31m error[39m [caliper] [adapters/fabric] 	Transaction[a98ac79052] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.623[31m error[39m [caliper] [adapters/fabric] 	Transaction[a1358035b8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.624[31m error[39m [caliper] [adapters/fabric] 	Transaction[0b0e4033cc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.664[31m error[39m [caliper] [adapters/fabric] 	Transaction[d2ee824acf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.664[31m error[39m [caliper] [adapters/fabric] 	Transaction[9dc6b6af74] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.664[31m error[39m [caliper] [adapters/fabric] 	Transaction[f95b39ca04] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.665[31m error[39m [caliper] [adapters/fabric] 	Transaction[853a8e2b81] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.665[31m error[39m [caliper] [adapters/fabric] 	Transaction[e3c4281700] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.665[31m error[39m [caliper] [adapters/fabric] 	Transaction[210d9af847] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.709[31m error[39m [caliper] [adapters/fabric] 	Transaction[ec2cfd40d3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.710[31m error[39m [caliper] [adapters/fabric] 	Transaction[18049b15a8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.713[31m error[39m [caliper] [adapters/fabric] 	Transaction[552cbe51bb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.713[31m error[39m [caliper] [adapters/fabric] 	Transaction[9ceeec2e18] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.714[31m error[39m [caliper] [adapters/fabric] 	Transaction[e557f6d643] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.715[31m error[39m [caliper] [adapters/fabric] 	Transaction[db514b1077] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.715[31m error[39m [caliper] [adapters/fabric] 	Transaction[7e927792b3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.785[31m error[39m [caliper] [adapters/fabric] 	Transaction[7c9faf7752] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.789[31m error[39m [caliper] [adapters/fabric] 	Transaction[cc41665ad7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.789[31m error[39m [caliper] [adapters/fabric] 	Transaction[7fa1a16097] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.789[31m error[39m [caliper] [adapters/fabric] 	Transaction[8d4bea9c06] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.790[31m error[39m [caliper] [adapters/fabric] 	Transaction[f058be8872] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.790[31m error[39m [caliper] [adapters/fabric] 	Transaction[d70307e602] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.791[31m error[39m [caliper] [adapters/fabric] 	Transaction[9b584cdd92] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.791[31m error[39m [caliper] [adapters/fabric] 	Transaction[8d73f16219] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.815[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:03.840[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 129 Fail:115 Unfinished:256
+2019.11.03-13:23:03.844[31m error[39m [caliper] [adapters/fabric] 	Transaction[bbcdc4f43b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.844[31m error[39m [caliper] [adapters/fabric] 	Transaction[e6756b41b7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.844[31m error[39m [caliper] [adapters/fabric] 	Transaction[14e88c2de3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.844[31m error[39m [caliper] [adapters/fabric] 	Transaction[48e7861feb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.847[31m error[39m [caliper] [adapters/fabric] 	Transaction[dd0a808ef8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.847[31m error[39m [caliper] [adapters/fabric] 	Transaction[8a5352d02f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.848[31m error[39m [caliper] [adapters/fabric] 	Transaction[a1271ad155] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.848[31m error[39m [caliper] [adapters/fabric] 	Transaction[58aead9ea8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.857[31m error[39m [caliper] [adapters/fabric] 	Transaction[b0d92f665b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.899[31m error[39m [caliper] [adapters/fabric] 	Transaction[f39f6068b7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.899[31m error[39m [caliper] [adapters/fabric] 	Transaction[1bda09ac03] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.903[31m error[39m [caliper] [adapters/fabric] 	Transaction[8ee1410fff] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.904[31m error[39m [caliper] [adapters/fabric] 	Transaction[50c7ceaf3e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.905[31m error[39m [caliper] [adapters/fabric] 	Transaction[b22cea702f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.905[31m error[39m [caliper] [adapters/fabric] 	Transaction[8fcc56f277] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.906[31m error[39m [caliper] [adapters/fabric] 	Transaction[55bba82eb4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.907[31m error[39m [caliper] [adapters/fabric] 	Transaction[b8fb24d4d7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.907[31m error[39m [caliper] [adapters/fabric] 	Transaction[4341d417bf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.949[31m error[39m [caliper] [adapters/fabric] 	Transaction[8921f5d36a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.950[31m error[39m [caliper] [adapters/fabric] 	Transaction[8f50c2c6f2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.951[31m error[39m [caliper] [adapters/fabric] 	Transaction[66f16d28bb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.968[31m error[39m [caliper] [adapters/fabric] 	Transaction[d3e9ab3b14] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.968[31m error[39m [caliper] [adapters/fabric] 	Transaction[aa7fd27f2d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.971[31m error[39m [caliper] [adapters/fabric] 	Transaction[6cdfcdf431] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:03.971[31m error[39m [caliper] [adapters/fabric] 	Transaction[c095f80cfe] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.008[31m error[39m [caliper] [adapters/fabric] 	Transaction[780b689068] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.009[31m error[39m [caliper] [adapters/fabric] 	Transaction[fa4eb6bfcd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.009[31m error[39m [caliper] [adapters/fabric] 	Transaction[459e6f4923] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.011[31m error[39m [caliper] [adapters/fabric] 	Transaction[849f65a7c9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.013[31m error[39m [caliper] [adapters/fabric] 	Transaction[0bae83172d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.013[31m error[39m [caliper] [adapters/fabric] 	Transaction[8fdd8bcf04] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.016[31m error[39m [caliper] [adapters/fabric] 	Transaction[56ec13fc7d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.016[31m error[39m [caliper] [adapters/fabric] 	Transaction[fd887bcc85] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.050[31m error[39m [caliper] [adapters/fabric] 	Transaction[f81cae7ec8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.050[31m error[39m [caliper] [adapters/fabric] 	Transaction[91ab78d9bf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.050[31m error[39m [caliper] [adapters/fabric] 	Transaction[0404791801] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.054[31m error[39m [caliper] [adapters/fabric] 	Transaction[a56c687ae5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.057[31m error[39m [caliper] [adapters/fabric] 	Transaction[bce59786fb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.057[31m error[39m [caliper] [adapters/fabric] 	Transaction[23bf029efc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.058[31m error[39m [caliper] [adapters/fabric] 	Transaction[8eced74aa7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.058[31m error[39m [caliper] [adapters/fabric] 	Transaction[4f91b0003d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.111[31m error[39m [caliper] [adapters/fabric] 	Transaction[2bbae15389] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.111[31m error[39m [caliper] [adapters/fabric] 	Transaction[9b6db92647] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.112[31m error[39m [caliper] [adapters/fabric] 	Transaction[6eb3b77282] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.111[31m error[39m [caliper] [adapters/fabric] 	Transaction[fc8468e532] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.114[31m error[39m [caliper] [adapters/fabric] 	Transaction[4375f722e4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.125[31m error[39m [caliper] [adapters/fabric] 	Transaction[a0f0c9db46] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.125[31m error[39m [caliper] [adapters/fabric] 	Transaction[343f8ff8ae] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.166[31m error[39m [caliper] [adapters/fabric] 	Transaction[3b0f64e63b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.166[31m error[39m [caliper] [adapters/fabric] 	Transaction[1b7bfea033] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.166[31m error[39m [caliper] [adapters/fabric] 	Transaction[b5f769c3a3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.172[31m error[39m [caliper] [adapters/fabric] 	Transaction[fee9672bba] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.174[31m error[39m [caliper] [adapters/fabric] 	Transaction[4def1079cb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.188[31m error[39m [caliper] [adapters/fabric] 	Transaction[b6506d84ee] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.188[31m error[39m [caliper] [adapters/fabric] 	Transaction[84c9881a73] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.230[31m error[39m [caliper] [adapters/fabric] 	Transaction[37113c3289] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.230[31m error[39m [caliper] [adapters/fabric] 	Transaction[1a342d6e01] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.244[31m error[39m [caliper] [adapters/fabric] 	Transaction[06fe72803b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.245[31m error[39m [caliper] [adapters/fabric] 	Transaction[883b74e800] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.246[31m error[39m [caliper] [adapters/fabric] 	Transaction[01e86ca753] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.246[31m error[39m [caliper] [adapters/fabric] 	Transaction[2e291fbf07] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.248[31m error[39m [caliper] [adapters/fabric] 	Transaction[f94b0d9393] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.248[31m error[39m [caliper] [adapters/fabric] 	Transaction[c48874d035] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.248[31m error[39m [caliper] [adapters/fabric] 	Transaction[874f5c2276] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.297[31m error[39m [caliper] [adapters/fabric] 	Transaction[f1283ee6f2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.297[31m error[39m [caliper] [adapters/fabric] 	Transaction[918f036422] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.298[31m error[39m [caliper] [adapters/fabric] 	Transaction[dd59f90ce2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.306[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:04.308[31m error[39m [caliper] [adapters/fabric] 	Transaction[83254aee05] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.310[31m error[39m [caliper] [adapters/fabric] 	Transaction[ba8472d7b6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.309[31m error[39m [caliper] [adapters/fabric] 	Transaction[22bdb186ab] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.309[31m error[39m [caliper] [adapters/fabric] 	Transaction[e3f6894998] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.311[31m error[39m [caliper] [adapters/fabric] 	Transaction[30023b7f2a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.311[31m error[39m [caliper] [adapters/fabric] 	Transaction[ed4fc6b225] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.373[31m error[39m [caliper] [adapters/fabric] 	Transaction[93dbc8569b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.374[31m error[39m [caliper] [adapters/fabric] 	Transaction[9036536e95] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.374[31m error[39m [caliper] [adapters/fabric] 	Transaction[f39c4b0392] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.374[31m error[39m [caliper] [adapters/fabric] 	Transaction[9f363fecc0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.375[31m error[39m [caliper] [adapters/fabric] 	Transaction[3a98acfb49] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.377[31m error[39m [caliper] [adapters/fabric] 	Transaction[ee9c799f30] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.377[31m error[39m [caliper] [adapters/fabric] 	Transaction[20160bb70c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.379[31m error[39m [caliper] [adapters/fabric] 	Transaction[038751ffe0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.380[31m error[39m [caliper] [adapters/fabric] 	Transaction[6ce16252ed] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.405[31m error[39m [caliper] [adapters/fabric] 	Transaction[fa452e93d6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.405[31m error[39m [caliper] [adapters/fabric] 	Transaction[15e3147278] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.405[31m error[39m [caliper] [adapters/fabric] 	Transaction[7394252fe2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.406[31m error[39m [caliper] [adapters/fabric] 	Transaction[632508a7d5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.406[31m error[39m [caliper] [adapters/fabric] 	Transaction[cb3784092d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.406[31m error[39m [caliper] [adapters/fabric] 	Transaction[a51678be57] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.406[31m error[39m [caliper] [adapters/fabric] 	Transaction[9b0b2b2dfe] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.413[31m error[39m [caliper] [adapters/fabric] 	Transaction[a084463556] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.413[31m error[39m [caliper] [adapters/fabric] 	Transaction[4e8c71f149] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[38ff59a075] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[4673e52714] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[716c49009c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[e98f0b56ed] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[aa4e946728] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.454[31m error[39m [caliper] [adapters/fabric] 	Transaction[31de1d1661] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.455[31m error[39m [caliper] [adapters/fabric] 	Transaction[65ed728110] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.455[31m error[39m [caliper] [adapters/fabric] 	Transaction[1dfe2b37b5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.491[31m error[39m [caliper] [adapters/fabric] 	Transaction[fa172ce8c7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.492[31m error[39m [caliper] [adapters/fabric] 	Transaction[fbfb6a1a70] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.492[31m error[39m [caliper] [adapters/fabric] 	Transaction[b8bae261ba] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.499[31m error[39m [caliper] [adapters/fabric] 	Transaction[be5fe65d61] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.504[31m error[39m [caliper] [adapters/fabric] 	Transaction[0357a7ae93] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.504[31m error[39m [caliper] [adapters/fabric] 	Transaction[e10a60b82f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.532[31m error[39m [caliper] [adapters/fabric] 	Transaction[93f561d627] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.532[31m error[39m [caliper] [adapters/fabric] 	Transaction[e4da422df8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.534[31m error[39m [caliper] [adapters/fabric] 	Transaction[3b1ed49404] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.534[31m error[39m [caliper] [adapters/fabric] 	Transaction[0e08095050] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.534[31m error[39m [caliper] [adapters/fabric] 	Transaction[15eaff5ae7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.536[31m error[39m [caliper] [adapters/fabric] 	Transaction[553efc2349] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.536[31m error[39m [caliper] [adapters/fabric] 	Transaction[b00d76a807] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.536[31m error[39m [caliper] [adapters/fabric] 	Transaction[2d25af36d3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.584[31m error[39m [caliper] [adapters/fabric] 	Transaction[3fd9d944fa] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.585[31m error[39m [caliper] [adapters/fabric] 	Transaction[53704d4d47] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.589[31m error[39m [caliper] [adapters/fabric] 	Transaction[c1a652d65a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.590[31m error[39m [caliper] [adapters/fabric] 	Transaction[9230ee916f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.590[31m error[39m [caliper] [adapters/fabric] 	Transaction[9734f5dccc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.590[31m error[39m [caliper] [adapters/fabric] 	Transaction[8efd8d7c7f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.590[31m error[39m [caliper] [adapters/fabric] 	Transaction[1daa9f5362] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.592[31m error[39m [caliper] [adapters/fabric] 	Transaction[a6556cd37e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.592[31m error[39m [caliper] [adapters/fabric] 	Transaction[b9726c67a1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.630[31m error[39m [caliper] [adapters/fabric] 	Transaction[a65d805e8f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.630[31m error[39m [caliper] [adapters/fabric] 	Transaction[51fc9f3c0e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.630[31m error[39m [caliper] [adapters/fabric] 	Transaction[39b69270bf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.633[31m error[39m [caliper] [adapters/fabric] 	Transaction[ddc54e2c18] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.633[31m error[39m [caliper] [adapters/fabric] 	Transaction[6feb134394] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.637[31m error[39m [caliper] [adapters/fabric] 	Transaction[c8622328cf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.637[31m error[39m [caliper] [adapters/fabric] 	Transaction[147e32f14a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.637[31m error[39m [caliper] [adapters/fabric] 	Transaction[6892eee5a6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.671[31m error[39m [caliper] [adapters/fabric] 	Transaction[6d2d8096a9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.672[31m error[39m [caliper] [adapters/fabric] 	Transaction[ca77cb8a22] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.675[31m error[39m [caliper] [adapters/fabric] 	Transaction[dc8be7f722] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.676[31m error[39m [caliper] [adapters/fabric] 	Transaction[93025de121] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.675[31m error[39m [caliper] [adapters/fabric] 	Transaction[29c1e2767c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.676[31m error[39m [caliper] [adapters/fabric] 	Transaction[3dfbcc39ae] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.677[31m error[39m [caliper] [adapters/fabric] 	Transaction[c25839368c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.677[31m error[39m [caliper] [adapters/fabric] 	Transaction[e6c5ffaaf7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.696[31m error[39m [caliper] [adapters/fabric] 	Transaction[1852658e49] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.697[31m error[39m [caliper] [adapters/fabric] 	Transaction[26b47161ce] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.698[31m error[39m [caliper] [adapters/fabric] 	Transaction[1fe452adeb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.699[31m error[39m [caliper] [adapters/fabric] 	Transaction[218c375e1e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.697[31m error[39m [caliper] [adapters/fabric] 	Transaction[59943349d6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.699[31m error[39m [caliper] [adapters/fabric] 	Transaction[501fe2b212] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.706[31m error[39m [caliper] [adapters/fabric] 	Transaction[6574c21ea1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.719[31m error[39m [caliper] [adapters/fabric] 	Transaction[c8b85b7f5d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.719[31m error[39m [caliper] [adapters/fabric] 	Transaction[c4df17ad88] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.720[31m error[39m [caliper] [adapters/fabric] 	Transaction[33ea5326d1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.720[31m error[39m [caliper] [adapters/fabric] 	Transaction[d9af466545] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.720[31m error[39m [caliper] [adapters/fabric] 	Transaction[75e2a9c1df] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.722[31m error[39m [caliper] [adapters/fabric] 	Transaction[9467642b81] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.723[31m error[39m [caliper] [adapters/fabric] 	Transaction[f7b0577948] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.722[31m error[39m [caliper] [adapters/fabric] 	Transaction[18f15e8e90] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.723[31m error[39m [caliper] [adapters/fabric] 	Transaction[5112356c1e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.723[31m error[39m [caliper] [adapters/fabric] 	Transaction[16a45ae8a2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.741[31m error[39m [caliper] [adapters/fabric] 	Transaction[c33e50ece6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.743[31m error[39m [caliper] [adapters/fabric] 	Transaction[e0d032a3b9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.742[31m error[39m [caliper] [adapters/fabric] 	Transaction[7fa4f9b224] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.746[31m error[39m [caliper] [adapters/fabric] 	Transaction[f8573b498f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.749[31m error[39m [caliper] [adapters/fabric] 	Transaction[392814893a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.750[31m error[39m [caliper] [adapters/fabric] 	Transaction[10f5cf71ec] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.750[31m error[39m [caliper] [adapters/fabric] 	Transaction[e430e4510b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.772[31m error[39m [caliper] [adapters/fabric] 	Transaction[e99f3a9925] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.772[31m error[39m [caliper] [adapters/fabric] 	Transaction[20ed04b74c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.773[31m error[39m [caliper] [adapters/fabric] 	Transaction[41964bdd26] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.775[31m error[39m [caliper] [adapters/fabric] 	Transaction[36ed28c997] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.774[31m error[39m [caliper] [adapters/fabric] 	Transaction[8590bab2a2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.774[31m error[39m [caliper] [adapters/fabric] 	Transaction[a9d750d720] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.776[31m error[39m [caliper] [adapters/fabric] 	Transaction[3b34c45fbd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.812[31m error[39m [caliper] [adapters/fabric] 	Transaction[19fca1af07] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.814[31m error[39m [caliper] [adapters/fabric] 	Transaction[80ee82b1e4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.814[31m error[39m [caliper] [adapters/fabric] 	Transaction[db03197e41] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.814[31m error[39m [caliper] [adapters/fabric] 	Transaction[3a15eee288] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.815[31m error[39m [caliper] [adapters/fabric] 	Transaction[477db7ed31] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.815[31m error[39m [caliper] [adapters/fabric] 	Transaction[9feb5d78f7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.815[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:04.821[31m error[39m [caliper] [adapters/fabric] 	Transaction[59da502b44] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.822[31m error[39m [caliper] [adapters/fabric] 	Transaction[b3f49c7f0b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.840[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 172 Fail:292 Unfinished:36
+2019.11.03-13:23:04.846[31m error[39m [caliper] [adapters/fabric] 	Transaction[c22c0d3b39] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.852[31m error[39m [caliper] [adapters/fabric] 	Transaction[cc55b4ffdc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.853[31m error[39m [caliper] [adapters/fabric] 	Transaction[f52305fac6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.846[31m error[39m [caliper] [adapters/fabric] 	Transaction[ff6b716f5a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.846[31m error[39m [caliper] [adapters/fabric] 	Transaction[3fdfa82076] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.854[31m error[39m [caliper] [adapters/fabric] 	Transaction[11b09b280d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.853[31m error[39m [caliper] [adapters/fabric] 	Transaction[0805aa04f5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.854[31m error[39m [caliper] [adapters/fabric] 	Transaction[a96fc8034f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.859[31m error[39m [caliper] [adapters/fabric] 	Transaction[4df1f9f72d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.859[31m error[39m [caliper] [adapters/fabric] 	Transaction[8a634139f9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.888[31m error[39m [caliper] [adapters/fabric] 	Transaction[14d8170b0e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.888[31m error[39m [caliper] [adapters/fabric] 	Transaction[75fb563c87] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.888[31m error[39m [caliper] [adapters/fabric] 	Transaction[daa5679699] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.892[31m error[39m [caliper] [adapters/fabric] 	Transaction[885b581f4b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.892[31m error[39m [caliper] [adapters/fabric] 	Transaction[3eb91f49bc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.893[31m error[39m [caliper] [adapters/fabric] 	Transaction[ba56c8fadd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.893[31m error[39m [caliper] [adapters/fabric] 	Transaction[183721bc72] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.893[31m error[39m [caliper] [adapters/fabric] 	Transaction[c9484d4ec7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.893[31m error[39m [caliper] [adapters/fabric] 	Transaction[2d8d35594b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.924[31m error[39m [caliper] [adapters/fabric] 	Transaction[ad60e486b1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.925[31m error[39m [caliper] [adapters/fabric] 	Transaction[da7ed75b1c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.925[31m error[39m [caliper] [adapters/fabric] 	Transaction[064df1af3b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.924[31m error[39m [caliper] [adapters/fabric] 	Transaction[8f29ad0eab] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.924[31m error[39m [caliper] [adapters/fabric] 	Transaction[91bf94433f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.924[31m error[39m [caliper] [adapters/fabric] 	Transaction[f6fd960134] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.927[31m error[39m [caliper] [adapters/fabric] 	Transaction[f517341bf8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.927[31m error[39m [caliper] [adapters/fabric] 	Transaction[9787e2d1f8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.928[31m error[39m [caliper] [adapters/fabric] 	Transaction[c507cf2cff] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.994[31m error[39m [caliper] [adapters/fabric] 	Transaction[70d2ec97a9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.994[31m error[39m [caliper] [adapters/fabric] 	Transaction[631a7c59f0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.995[31m error[39m [caliper] [adapters/fabric] 	Transaction[c17d713f24] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.995[31m error[39m [caliper] [adapters/fabric] 	Transaction[696f89f686] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:04.995[31m error[39m [caliper] [adapters/fabric] 	Transaction[aea9b97568] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT
+2019.11.03-13:23:05.238[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:05.817[90m debug[39m [caliper] [monitor-process] 	Entering readStats()
+2019.11.03-13:23:06.078[90m debug[39m [caliper] [monitor-process] 	Exiting readStats()
+2019.11.03-13:23:06.240[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 175 Fail:325 Unfinished:0
+2019.11.03-13:23:06.240[90m debug[39m [caliper] [report-builder] 	getLocalResultValues called with: 
+2019.11.03-13:23:06.241[32m info [39m [caliper] [report-builder] 	### Test result ###
+2019.11.03-13:23:06.242[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 175  | 325  | 199.4           | 6.46            | 1.97            | 5.34            | 21.7             |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:23:06.242[32m info [39m [caliper] [report-builder] 	### docker resource stats ###'
+2019.11.03-13:23:06.245[32m info [39m [caliper] [report-builder] 	
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+| Type   | Name                                    | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-smallbank-v0 | 6.7MB       | 6.7MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-smallbank-v0 | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-simple-v0    | 8.3MB       | 8.3MB       | 13.39      | 4.46       | 800.2KB    | 291.9KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-simple-v0    | 10.2MB      | 10.1MB      | 9.78       | 3.26       | 796.8KB    | 303.8KB     | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-drm-v0       | 6.4MB       | 6.4MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-drm-v0       | 6.5MB       | 6.5MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.com-marbles-v0   | 7.6MB       | 7.6MB       | 0.01       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.com-marbles-v0   | 6.5MB       | 6.5MB       | 0.01       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com                  | 100.3MB     | 99.5MB      | 62.78      | 35.33      | 2.9MB      | 1.5MB       | 0B        | 1.5MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com                  | 134.1MB     | 133.4MB     | 57.16      | 37.87      | 2.9MB      | 1.5MB       | 0B        | 1.6MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com                     | 8.1MB       | 8.1MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | orderer.example.com                     | 28.0MB      | 26.7MB      | 31.69      | 11.45      | 2.0MB      | 3.9MB       | 0B        | 2.3MB      |
+|--------|-----------------------------------------|-------------|-------------|------------|------------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com                     | 8.9MB       | 8.9MB       | 0.00       | 0.00       | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------------+-------------+-------------+------------+------------+------------+-------------+-----------+------------+
+
+2019.11.03-13:23:06.245[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:23:06.246[32m info [39m [caliper] [report-builder] 	### process resource stats ###'
+2019.11.03-13:23:06.246[32m info [39m [caliper] [report-builder] 	
++---------+---------------------------+-------------+-------------+------------+------------+
+| Type    | Name                      | Memory(max) | Memory(avg) | CPU% (max) | CPU% (avg) |
+|---------|---------------------------|-------------|-------------|------------|------------|
+| Process | node local-client.js(avg) | -           | -           | NaN        | NaN        |
++---------+---------------------------+-------------+-------------+------------+------------+
+
+2019.11.03-13:23:06.247[90m debug[39m [caliper] [caliper-flow] 	resources count:
+2019.11.03-13:23:06.247[32m info [39m [caliper] [defaultTest] 	------ Passed 'transfer' testing ------
+2019.11.03-13:23:06.247[32m info [39m [caliper] [caliper-flow] 	---------- Finished Test ----------
+
+2019.11.03-13:23:06.248[32m info [39m [caliper] [report-builder] 	### All test results ###
+2019.11.03-13:23:06.249[32m info [39m [caliper] [report-builder] 	
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name     | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| open     | 500  | 0    | 184.6           | 7.58            | 3.37            | 5.79            | 61.2             |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| query    | 500  | 0    | 196.1           | 1.35            | 0.02            | 0.61            | 180.1            |
+|----------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transfer | 175  | 325  | 199.4           | 6.46            | 1.97            | 5.34            | 21.7             |
++----------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2019.11.03-13:23:06.463[32m info [39m [caliper] [caliper-flow] 	Generated report with path /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples/report.html
+2019.11.03-13:23:06.464[32m info [39m [caliper] [caliper-flow] 	
+
+#######################################
+# Test summary: 3 succeeded, 0 failed #
+#######################################
+
+2019.11.03-13:23:06.498[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:23:06.499[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:23:06.499[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:23:06.500[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:23:06.519[32m info [39m [caliper] [client.js] 	Client exited with code null
+2019.11.03-13:23:07.468[32m info [39m [caliper] [local-observer] 	[transfer Round 0 Transaction Info] - Submitted: 500 Succ: 175 Fail:325 Unfinished:0
+2019.11.03-13:23:07.469[32m info [39m [caliper] [caliper-utils] 	Executing command: cd /Users/tittuvarghese/Documents/Projects/NetObjex/Caliper/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-*
